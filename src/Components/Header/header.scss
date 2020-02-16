@@ -15,6 +15,10 @@
         height: 80px;
     }
 
+    @include desktop{
+        padding: 0 150px 0 150px;
+    }
+
     &__logo{
         padding-bottom: 10px;
 
@@ -45,6 +49,11 @@
         border-radius: 4px;
         background-color: $alabaster;
         color: $black;
+
+        @include desktop{
+            font-size: 16px;
+            font-family: 'Avenir-Demi';
+        }
     }
 
     &__box{
