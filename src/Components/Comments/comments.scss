@@ -78,6 +78,7 @@
     &__namedate{
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
 
     &__name{
@@ -102,7 +103,7 @@
         border-radius: 100%;
         background-color: $mercury;
         position: absolute;
-        left: 16px;
+        left: -58px;
     }
 }
 
