@@ -1,6 +1,7 @@
 import React from 'react';
 import './comments.scss';
-import userIcon from './../../Assets/Images/Mohan-muruge.jpg'
+import UserIcon from './../../Assets/Images/Mohan-muruge.jpg';
+import CommentCard from './CommentCard/commentcard.jsx';
 
 const Comments = () => {
     return (
@@ -11,10 +12,13 @@ const Comments = () => {
                     <label className = 'comments__entrylabel' for= 'comment'>JOIN THE CONVERSATION</label>
                     <input className = 'comments__entry' name = 'comment' type ='text'></input>
                     <input className = 'comments__button' type='submit' value='COMMENT'/>
-                    <img className = 'comments__usericon' alt='your profile picture' src={userIcon}/>
+                    <img className = 'comments__usericon' alt='your profile picture' src={UserIcon}/>
                 </form>
             </div>
             <div className='comments__outputs'>
+                <CommentCard/>
+                <CommentCard/>
+                <CommentCard/>
             </div>
         </section>
     )
