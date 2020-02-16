@@ -1,4 +1,9 @@
 @import '../../variables.scss';
+@import '../../fonts.scss';
+
+html{
+    font-family: 'Avenir';
+}
 
 .header{
     box-sizing: border-box;
@@ -19,7 +24,7 @@
         width: 85%;
         padding-left: 40px;
         font-size: 14px;
-        // font-weight: ;
+        font-family: 'Avenir';
         border: solid 1px $mercury;
         border-radius: 4px;
         background-color: $alabaster;
@@ -39,6 +44,8 @@
         height: 50px;
         width: 78%;
         background-color: $brainflixblue;
+        font-family: 'Avenir-Demi';
+        font-size: 15px;
         border: none;
         border-radius: 4px;
         color: white;

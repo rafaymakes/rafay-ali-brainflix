@@ -1,32 +1,77 @@
+@import '../../variables.scss';
+@import '../../fonts.scss';
+
+body{
+    font-family: 'Avenir';
+}
+
 .video{
 
     &__videocontent{
         width: 100%;
     }
 
+    &__description{
+        padding: 0 16px 0 16px;
+    }
+
     &__top{
         display: flex;
         flex-direction: column;
-        padding: 0 16px 0 16px;
+        align-items: flex-start;
+        border-bottom: solid 2px $mercury;
+    }
+
+    &__title{
+        text-align: left;
+        font-family: 'Avenir-Bold';
     }
 
     &__details{
         display: flex;
+        justify-content: space-between;
     }
 
     &__stats{
         display: flex;
         justify-content: space-between;
         padding: 32px 0 24px 0;
-        width: 70%;
-
+        width: 202px;
+        position: relative;
     }
 
     &__author, &__postdate, &__views, &__likes{
         margin: 0;
     }
 
+    &__postdate{
+        color: $silver;
+    }
+
+    &__author{
+        font-family: 'Avenir-Demi';
+        margin-right: 8px;
+    }
+
     &__views{
-        margin-left: 30px;
+        margin-left: 28px;
+    }
+
+    &__viewsicon{
+        position: absolute;
+        top: 34px;
+
+    }
+
+    &__likesicon{
+        position: absolute;
+        left: 120px;
+        top: 34px;
+    }
+
+    &__text{
+        text-align: left;
+        font-size: 13px;
+        margin-top:24px;
     }
 }
