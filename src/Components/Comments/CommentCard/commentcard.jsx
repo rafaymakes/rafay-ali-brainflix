@@ -4,7 +4,7 @@ import '../comments.scss';
 const CommentCard = () => {
     return (
         <div className = 'comments__card'>
-                <div className = 'comments__content'>
+            <div className = 'comments__content'>
                 <div className = 'comments__namedate'>
                     <div className = 'comments__profpic'></div>
                     <p className = 'comments__name'>Michael Lyons</p>
