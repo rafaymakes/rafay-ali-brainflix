@@ -1,3 +1,10 @@
+@import './mixins.scss';
+
 .App {
     text-align: center;
+    overflow: hidden;
+
+    @include desktop{
+        position: relative;
+    }
 }
