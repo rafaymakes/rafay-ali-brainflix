@@ -2,7 +2,7 @@ import React from 'react'
 
 const Logo = () => {
     return (
-        <svg width="120px" height="24px" viewBox="0 0 120 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg class = "header__logo" width="120px" height="24px" viewBox="0 0 120 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <title>BrainFlix-Logo</title>
             <desc>Created with Sketch.</desc>
             <g id="BrainFlix" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

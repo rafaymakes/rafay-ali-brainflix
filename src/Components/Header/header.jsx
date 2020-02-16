@@ -8,10 +8,12 @@ const Header = () => {
         <header className = 'header'>
             <Logo className = 'header__logo'/>
             <form className = 'header__form'>
-                <input className = 'header__input' type='text'/>
-                <input className = 'header__search' type='submit' value='+ UPLOAD'/>
+                <input className = 'header__input' type='text' placeholder='Search'/>
+                <div className = 'header__box'>
+                    <input className = 'header__search' type='submit' value='+ UPLOAD'/>
+                    <img className = 'header__usericon' alt = 'Brainflix logo' src={userIcon}/>
+                </div>
             </form>
-            <img className = 'header__usericon' src={userIcon}/>
         </header>
     );
 }

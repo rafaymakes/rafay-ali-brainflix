@@ -1,7 +1,13 @@
+@import '../../variables.scss';
+
 .header{
     box-sizing: border-box;
     overflow: hidden;
-    padding: 0 16px 0 16px;
+    padding: 12px 16px 0 16px;
+
+    &__logo{
+        padding-bottom: 10px;
+    }
 
     &__form{
         display: flex;
@@ -9,8 +15,39 @@
     }
 
     &__input{
-        height: 40px;
+        height: 45px;
+        width: 85%;
+        padding-left: 40px;
+        font-size: 14px;
+        // font-weight: ;
+        border: solid 1px $mercury;
+        border-radius: 4px;
+        background-color: $alabaster;
+        color: $black;
+    
+    }
+
+    &__box{
+        height: 60px;
         width: 100%;
-        border: solid 1px grey;
+        display: flex;
+        justify-content: space-between;
+        margin: 8px 0 3px 0;
+    }
+
+    &__search{
+        height: 50px;
+        width: 78%;
+        background-color: $brainflixblue;
+        border: none;
+        border-radius: 4px;
+        color: white;
+    }
+
+    &__usericon{
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        object-fit: cover;
     }
 }
