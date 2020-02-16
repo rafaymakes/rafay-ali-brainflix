@@ -1,0 +1,64 @@
+@import '../../variables.scss';
+@import '../../fonts.scss';
+
+.comments{
+
+    padding: 0 16px 0 16px;
+
+    &__inputs{
+        border-bottom: solid 2px $mercury;
+    }
+
+    &__form{
+        position:relative;
+    }
+
+    &__count{
+        text-align: left;
+        font-family: 'Avenir-Demi';
+        margin-bottom: 32px;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 77%;
+        margin: 0 0 24px 65px;
+    }
+
+    &__entrylabel{
+        font-size: 12px;
+        font-family: 'Avenir-Demi';
+        color: $silver;
+    }
+
+    &__entry{
+        height: 80px;
+        border: solid 1px $mercury;
+        border-radius: 4px;
+        margin: 5px 0 16px 0;
+    }
+
+    &__button{
+        height: 45px;
+        width: 100%;
+        background-color: $brainflixblue;
+        font-family: 'Avenir-Demi';
+        font-size: 15px;
+        border: none;
+        border-radius: 4px;
+        color: white;
+    }
+
+    &__usericon{
+        height: 47px;
+        width: 47px;
+        border-radius: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: -65px;
+        top: 20px;
+    }
+}
+

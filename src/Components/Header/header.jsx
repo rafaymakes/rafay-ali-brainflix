@@ -11,7 +11,7 @@ const Header = () => {
                 <input className = 'header__input' type='text' placeholder='Search'/>
                 <div className = 'header__box'>
                     <input className = 'header__search' type='submit' value='+ UPLOAD'/>
-                    <img className = 'header__usericon' alt = 'Brainflix logo' src={userIcon}/>
+                    <img className = 'header__usericon' alt = 'your profile picture' src={userIcon}/>
                 </div>
             </form>
         </header>
