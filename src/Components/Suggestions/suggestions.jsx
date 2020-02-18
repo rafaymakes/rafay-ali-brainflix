@@ -2,19 +2,12 @@ import React from 'react';
 import './suggestions.scss';
 import SuggestionCard from './SuggestionCard/suggestioncard';
 
-const Suggestions = () => {
+const Suggestions = (props) => {
     return (
         <section className='suggestions'>
-            <p className = 'suggestions__title'>NEXT VIDEO</p>
-            <div className = 'suggestions__container'>
-                <SuggestionCard/>
-                <SuggestionCard/>
-                <SuggestionCard/>
-                <SuggestionCard/>
-                <SuggestionCard/>
-                <SuggestionCard/>
-                <SuggestionCard/>
-                <SuggestionCard/>
+            <p className='suggestions__title'>NEXT VIDEO</p>
+            <div className='suggestions__container'>
+                <SuggestionCard sideVideoDataProp={props} />
             </div>
         </section>
     );

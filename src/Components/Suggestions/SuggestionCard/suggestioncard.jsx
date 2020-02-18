@@ -1,16 +1,23 @@
 import React from 'react';
 import './../suggestions.scss';
-import thumbnail from './../../../Assets/Images/video-list-1.jpg';
 
-const SuggestionCard = () => {
+const SuggestionCard = (props) => {
     return (
-        <div className = 'suggestions__card'>
-            <img className = 'suggestions__thumbnail' alt = 'thumbnail of queued video' src={thumbnail}></img>
-            <div className = 'suggestions__titleauthor'>
-                <p className = 'suggestions__vidtitle'>Become A Travel Pro In One Easy Lesson</p>
-                <p className = 'suggestions__vidauthor'>Scotty Cranmer</p>
-            </div>
-        </div>
+
+        <>
+            {props.sideVideoDataProp.sideVideoProp.map(item => (
+
+                <div className='suggestions__card'>
+                    <img className='suggestions__thumbnail' alt='thumbnail of queued video' src={item.image} />
+                    <div className='suggestions__titleauthor'>
+                        <p className='suggestions__vidtitle'>{item.title}</p>
+                        <p className='suggestions__vidauthor'>{item.channel}</p>
+                    </div>
+                </div>
+            ))}
+        </>
+
+
     );
 }
 
