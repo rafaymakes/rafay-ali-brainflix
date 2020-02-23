@@ -6,6 +6,7 @@
     box-sizing: border-box;
     overflow: hidden;
     padding: 12px 16px 0 16px;
+    border-bottom: 1px solid $alabaster;
 
     @include tablet{
         padding: 0 24px 0 24px;
