@@ -21,20 +21,29 @@ const keyAffix = '?api_key=94f19a78-ed3b-4723-9773-164ca4dffeee';
 class Home extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      mainVideo: {},
+      videoids: [],
+      sidevideo: [],
+      mainvideo: [],
     }
   }
 
   componentDidMount() {
-    axios.get(' https://project-2-api.herokuapp.com/videos' + keyAffix)
+    axios.get('https://project-2-api.herokuapp.com/videos' + keyAffix)
       .then(result => {
         result.data.forEach(item => {
-          console.log(item.title);
+          this.setState({ sidevideo: item })
+          console.log(this.state.sidevideo)
         })
       })
   }
+
+  // componentDidUpdate() {
+  //   axios.get('https://project-2-api.herokuapp.com/videos/' + this.state.sidevideo.id + keyAffix)
+  //     .then(result => {
+
+  //     })
+  // }
 
   // this.state = {
   //   mainVideo: {
@@ -126,10 +135,10 @@ class Home extends Component {
         />
         <Comments
           commentsProp={this.state.mainVideo.comments}
-        />
-        <Suggestions
-          sideVideoProp={this.state.sideVideo}
         /> */}
+        <Suggestions
+          sideVideoProp={this.state.sidevideo}
+        />
       </div>
     )
   }

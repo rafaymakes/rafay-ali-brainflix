@@ -2,10 +2,10 @@ import React from 'react';
 import './../suggestions.scss';
 
 const SuggestionCard = (props) => {
+    // console.log(props.sideVideoDataProp.sideVideoProp);
     return (
-
         <>
-            {props.sideVideoDataProp.sideVideoProp.map(item => (
+            {/* {props.sideVideoDataProp.sideVideoProp.map(item => (
 
                 <div className='suggestions__card'>
                     <img className='suggestions__thumbnail' alt='thumbnail of queued video' src={item.image} />
@@ -14,7 +14,8 @@ const SuggestionCard = (props) => {
                         <p className='suggestions__vidauthor'>{item.channel}</p>
                     </div>
                 </div>
-            ))}
+            ))
+            } */}
         </>
 
 
