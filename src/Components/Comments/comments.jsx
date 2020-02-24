@@ -4,7 +4,7 @@ import UserIcon from './../../Assets/Images/Mohan-muruge.jpg';
 import CommentCard from './CommentCard/commentcard.jsx';
 
 const Comments = (props) => {
-    console.log(props);
+
     return (
         <section className='comments'>
             <div className='comments__inputs'>

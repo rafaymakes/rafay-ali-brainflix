@@ -10,7 +10,7 @@ const CommentCard = (props) => {
                     <div className='comments__content'>
                         <div className='comments__namedate'>
                             <div className='comments__profpic'></div>
-                            <p className='comments__name'>{item.commenter}</p>
+                            <p className='comments__name'>{item.name}</p>
                             <p className='comments__date'>{item.timestamp}</p>
                         </div>
                         <p className='comments__text'>{item.comment}</p>
