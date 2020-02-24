@@ -5,6 +5,7 @@ import Video from './../Video/video.jsx';
 import Comments from './../Comments/comments.jsx';
 import Suggestions from './../Suggestions/suggestions.jsx';
 import axios from 'axios';
+import Axios from 'axios';
 
 const keyAffix = '?api_key=94f19a78-ed3b-4723-9773-164ca4dffeee';
 
@@ -41,6 +42,23 @@ class Home extends Component {
     }
   }
 
+  sendComment = (id, comment) => {
+    Axios.post(
+      `https://project-2-api.herokuapp.com/videos/${id}/comments/${keyAffix}`, comment)
+      .then(this.getMainVideo(id));
+  }
+
+  commenting = event => {
+    event.preventDefault();
+    let id = this.state.mainvideo.id;
+    let comment = {
+      name: "Rafay",
+      comment: event.target.comment.value
+    }
+    this.sendComment(id, comment);
+    event.target.reset()
+  }
+
   render() {
     console.log(this.props)
     return (
@@ -51,6 +69,7 @@ class Home extends Component {
         />
         <Comments
           commentsProp={this.state.comments}
+          submitProp={this.commenting}
         />
         <Suggestions
           match={this.props.match}

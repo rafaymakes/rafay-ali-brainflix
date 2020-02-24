@@ -28,6 +28,11 @@
         }
     }
 
+    &__link{
+        text-decoration:none;
+        color: $black;
+    }
+
     &__card{
         height: 70px;
         display: flex;

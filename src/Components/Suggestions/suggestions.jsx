@@ -3,7 +3,6 @@ import './suggestions.scss';
 import SuggestionCard from './SuggestionCard/suggestioncard';
 
 const Suggestions = (props) => {
-    console.log(props)
     return (
         <section className='suggestions'>
             <p className='suggestions__title'>NEXT VIDEO</p>

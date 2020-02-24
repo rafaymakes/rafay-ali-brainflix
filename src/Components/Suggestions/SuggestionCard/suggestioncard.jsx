@@ -36,7 +36,7 @@ class SuggestionCard extends React.Component {
             <>
                 {sidevideos.map(item => {
                     return (
-                        <Link key={item.id} to={`/video/${item.id}`}>
+                        <Link className='suggestions__link' key={item.id} to={`/video/${item.id}`}>
                             < div className='suggestions__card' >
                                 <img className='suggestions__thumbnail' alt='thumbnail of queued video' src={item.image} />
                                 <div className='suggestions__titleauthor'>
