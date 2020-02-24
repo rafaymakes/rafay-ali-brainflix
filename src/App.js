@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import './index.css';
 import Home from './Components/Home/Home.js';
 import Upload from './Components/Upload/Upload.jsx';
+import axios from 'axios';
 
 class App extends React.Component {
     render() {
