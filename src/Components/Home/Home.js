@@ -32,18 +32,21 @@ class Home extends Component {
     axios.get('https://project-2-api.herokuapp.com/videos' + keyAffix)
       .then(result => {
         result.data.forEach(item => {
-          this.setState({ sidevideo: item })
-          console.log(this.state.sidevideo)
+          const sidevideo = item
+          this.setState({ sidevideo })
+          // console.log(this.state.sidevideo)
         })
       })
   }
 
-  // componentDidUpdate() {
-  //   axios.get('https://project-2-api.herokuapp.com/videos/' + this.state.sidevideo.id + keyAffix)
-  //     .then(result => {
-
-  //     })
-  // }
+  componentDidMount() {
+    axios.get('https://project-2-api.herokuapp.com/videos/1af0jruup5gu' + keyAffix)
+      .then(result => {
+        const mainvideo = result.data
+        this.setState({ mainvideo })
+        console.log(this.state.mainvideo.image)
+      })
+  }
 
   // this.state = {
   //   mainVideo: {
@@ -130,11 +133,11 @@ class Home extends Component {
     return (
       <div className="Home">
         <Header />
-        {/* <Video
-          mainVideoProp={this.state.mainVideo}
+        <Video
+          mainVideoProp={this.state.mainvideo}
         />
-        <Comments
-          commentsProp={this.state.mainVideo.comments}
+        {/* <Comments
+          commentsProp={this.state.mainvideo.comments}
         /> */}
         <Suggestions
           sideVideoProp={this.state.sidevideo}
