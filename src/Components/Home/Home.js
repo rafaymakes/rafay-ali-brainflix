@@ -34,17 +34,16 @@ class Home extends Component {
         result.data.forEach(item => {
           const sidevideo = item
           this.setState({ sidevideo })
-          // console.log(this.state.sidevideo)
+          console.log(this.state.sidevideo)
         })
       })
   }
 
-  componentDidMount() {
+  componentDidUpdate() {
     axios.get('https://project-2-api.herokuapp.com/videos/1af0jruup5gu' + keyAffix)
       .then(result => {
         const mainvideo = result.data
         this.setState({ mainvideo })
-        console.log(this.state.mainvideo.image)
       })
   }
 
