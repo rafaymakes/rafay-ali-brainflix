@@ -28,6 +28,11 @@
         }
     }
 
+    &__logolink{
+        display: flex;
+        justify-content: center;
+    }
+
     &__form{
         display: flex;
         flex-direction: column;
@@ -73,13 +78,22 @@
 
     &__search{
         height: 50px;
-        width: 78%;
+        width: 100%;
         background-color: $brainflixblue;
         font-family: 'Avenir-Demi';
         font-size: 15px;
         border: none;
         border-radius: 4px;
         color: white;
+
+        @include tablet{
+            width: 100px;
+        }
+    }
+
+    &__searchlink{
+        height: 50px;
+        width: 78%;
 
         @include tablet{
             margin: 0 24px 0 24px;

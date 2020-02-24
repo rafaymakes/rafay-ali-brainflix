@@ -10,8 +10,8 @@ class App extends React.Component {
         return (
             <Router>
                 <Switch>
-                    <Route exact path='/'><Home /></Route>
-                    <Route path='/upload'><Upload /></Route>
+                    <Route exact path='/' component={Home}></Route>
+                    <Route path='/upload' component={Upload}></Route>
                 </Switch>
             </Router>
         )
