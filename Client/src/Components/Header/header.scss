@@ -54,6 +54,8 @@
         border: solid 1px $mercury;
         border-radius: 4px;
         background-color: $alabaster;
+        background: url(./../../Assets/Icons/SVG/Icon-search.svg) no-repeat;
+        background-position: 5%;
         color: $black;
 
         @include desktop{
@@ -85,6 +87,8 @@
         border: none;
         border-radius: 4px;
         color: white;
+        position: relative;
+        padding-left: 40px; 
 
         @include tablet{
             width: 100px;
@@ -106,5 +110,11 @@
         width: 50px;
         border-radius: 100%;
         object-fit: cover;
+    }
+
+    &__uploadicon{
+        position: absolute;
+        left: 75px;
+        top: 17px;
     }
 }

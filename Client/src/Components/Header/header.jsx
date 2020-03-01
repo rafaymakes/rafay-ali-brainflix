@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import './header.scss';
 import Logo from '../../Assets/Logo/Logo-brainflix.jsx';
 import userIcon from './../../Assets/Images/Mohan-muruge.jpg';
+import uploadIcon from './../../Assets/Icons/SVG/Icon-upload.svg';
 
 class Header extends React.Component {
     render() {
@@ -17,7 +18,7 @@ class Header extends React.Component {
                     <input className='header__input' type='text' placeholder='Search' />
                     <div className='header__box'>
                         <Link className='header__searchlink' to='/Upload'>
-                            <button className='header__search'>UPLOAD</button>
+                            <button className='header__search'><img className='header__uploadicon' src={uploadIcon} />UPLOAD</button>
                         </Link>
                         <img className='header__usericon' alt='your profile picture' src={userIcon} />
                     </div>

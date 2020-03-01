@@ -10,10 +10,21 @@ body{
 
     &__videoplayer{
         background-color: black;
+        height: 55vw;
+
+        @include tablet{
+            height: 390px;
+        }
+
+        @include desktop{
+            height: 438px;
+        }
     }
 
     &__videocontent{
         width: 100%;
+        height: 100%;
+        object-fit: contain;
 
         @include tablet{
             width: 700px;
@@ -23,6 +34,18 @@ body{
             width: 786px;
         }
     }
+
+    &__controls{
+        position: relative;
+    }
+
+    &__fullscreen, &__pause, &__play, &__scrubber, &__volume{
+        position: absolute;
+    }
+
+    // &__fullscreen{
+    //     top: 90%;
+    // }
 
     &__description{
         padding: 0 16px 20px 16px;
