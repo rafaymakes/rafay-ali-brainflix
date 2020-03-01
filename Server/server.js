@@ -31,7 +31,7 @@ app.post("/Upload", (req, res) => {
     const desc = req.body.description;
     const thumbnail = "https://i.redd.it/lvqnbx9kk2k41.jpg";
     const newSideVideo = { id: 1234, title, channel: "Rafay", image: thumbnail };
-    const newMainVideo = { id: 1234, title, channel: "Rafay", image: thumbnail, desc };
+    const newMainVideo = { id: 1234, title, channel: "Rafay", image: thumbnail, desc, views: "0", likes: "0", duration: "00:00", video: "", comments: [] };
     sideVideo.push(newSideVideo);
     mainVideo.push(newMainVideo);
     res.end;

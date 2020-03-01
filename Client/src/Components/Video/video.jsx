@@ -14,11 +14,13 @@ const Video = (props) => {
         <section className='video'>
             <div className='video__videoplayer'>
                 <div className='video__controls'>
-                    {/* <img className='video__pause' src={pause}></img> */}
                     <div className='video__playbox'>
                         <img className='video__play' src={play}></img>
                     </div>
-                    <img className='video__scrubber' src={scrubber}></img>
+                    <div className='video__scrubberbox'>
+                        <div className='video__scrubberline'></div>
+                        <img className='video__scrubber' src={scrubber}></img>
+                    </div>
                     <div className='video__fullnVol'>
                         <img className='video__fullscreen' src={fullscreen}></img>
                         <img className='video__volume' src={volume}></img>
