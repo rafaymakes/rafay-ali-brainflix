@@ -1,0 +1,11 @@
+@import './../../../mixins.scss';
+
+.Home {
+    text-align: center;
+    overflow: hidden;
+
+    @include desktop{
+        position: relative;
+        overflow: visible;
+    }
+}
