@@ -3,7 +3,6 @@ import './video.scss';
 import ViewIcon from '../../Assets/Icons/SVG/Icon-views.svg';
 import LikeIcon from '../../Assets/Icons/SVG/Icon-likes.svg';
 import fullscreen from '../../Assets/Icons/SVG/Icon-fullscreen.svg';
-import pause from '../../Assets/Icons/SVG/Icon-pause.svg';
 import play from '../../Assets/Icons/SVG/Icon-play.svg';
 import scrubber from '../../Assets/Icons/SVG/Icon-scrubber-control.svg';
 import volume from '../../Assets/Icons/SVG/Icon-volume.svg';
@@ -14,16 +13,18 @@ const Video = (props) => {
         <section className='video'>
             <div className='video__videoplayer'>
                 <div className='video__controls'>
-                    <div className='video__playbox'>
-                        <img className='video__play' src={play}></img>
-                    </div>
-                    <div className='video__scrubberbox'>
-                        <div className='video__scrubberline'></div>
-                        <img className='video__scrubber' src={scrubber}></img>
-                    </div>
-                    <div className='video__fullnVol'>
-                        <img className='video__fullscreen' src={fullscreen}></img>
-                        <img className='video__volume' src={volume}></img>
+                    <div className='video__controlsflex'>
+                        <div className='video__playbox'>
+                            <img className='video__play' src={play}></img>
+                        </div>
+                        <div className='video__scrubberbox'>
+                            <div className='video__scrubberline'></div>
+                            <img className='video__scrubber' src={scrubber}></img>
+                        </div>
+                        <div className='video__fullnVol'>
+                            <img className='video__fullscreen' src={fullscreen}></img>
+                            <img className='video__volume' src={volume}></img>
+                        </div>
                     </div>
                     <video className='video__videocontent' poster={props.mainVideoProp.image} >
                     </video>

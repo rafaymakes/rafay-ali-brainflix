@@ -55,7 +55,7 @@
         border-radius: 4px;
         background-color: $alabaster;
         background: url(./../../Assets/Icons/SVG/Icon-search.svg) no-repeat;
-        background-position: 5%;
+        background-position: 15px;
         color: $black;
 
         @include desktop{
@@ -92,6 +92,7 @@
 
         @include tablet{
             width: 100px;
+            padding-left: 20px;
         }
     }
 
@@ -116,5 +117,9 @@
         position: absolute;
         left: 75px;
         top: 17px;
+
+        @include tablet{
+            left: 10px;
+        }
     }
 }

@@ -8,7 +8,6 @@ import uploadIcon from './../../Assets/Icons/SVG/Icon-upload.svg';
 class Header extends React.Component {
     render() {
         const { match } = this.props;
-
         return (
             <header className='header'>
                 <Link className='header__logolink' to='/'>
