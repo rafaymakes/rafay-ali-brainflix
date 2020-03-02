@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import './index.css';
-import Home from './Components/Pages/Home/Home.js';
-import Upload from './Components/Pages/Upload/Upload.jsx';
+import Home from './Pages/Home/Home.js';
+import Upload from './Pages/Upload/Upload.jsx';
 
 class App extends React.Component {
     render() {

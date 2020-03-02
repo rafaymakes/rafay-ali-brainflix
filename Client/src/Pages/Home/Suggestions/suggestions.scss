@@ -1,0 +1,68 @@
+@import '../../../variables.scss';
+@import '../../../fonts.scss';
+@import '../../../mixins.scss';
+
+.suggestions{
+    font-family: 'Avenir';
+    padding: 0 16px 0 16px;
+
+    @include tablet{
+        padding: 0 24px 0 24px;
+    }
+
+    @include desktop{
+        position: absolute;
+        top: 530px;
+        left: 750px;
+    }
+
+    &__title{
+        font-size: 13px;
+        font-family: 'Avenir-bold';
+        color: $silver;
+        text-align: left;
+        margin: 40px 0 40px 0;
+
+        @include desktop{
+            font-size: 15px;
+        }
+    }
+
+    &__link{
+        text-decoration:none;
+        color: $black;
+    }
+
+    &__card{
+        height: 70px;
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    &__thumbnail{
+        width: 120px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    &__titleauthor{
+        text-align: left;
+        font-size: 14px;
+        padding-left: 16px;
+
+        @include tablet{
+            width: 180px;
+        }
+    }
+
+    &__vidtitle{
+        margin: 0;
+        font-family: 'Avenir-Bold';
+    }
+
+    &__vidauthor{
+        margin: 12px 0 0 0;
+    }
+}
+
