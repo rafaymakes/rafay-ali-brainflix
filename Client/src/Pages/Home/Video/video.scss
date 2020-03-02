@@ -88,6 +88,9 @@ body{
 
         @include tablet{
             width: 519px;
+            justify-content: space-between;
+            padding:0 16px;
+            box-sizing: border-box;
         }
 
         @include desktop{
@@ -101,10 +104,24 @@ body{
         background-color: rgb(0,0,0);
         border-radius: 4px;
         z-index: 1;
+
+        @include tablet{
+            width: 88%;
+        }
     }
 
     &__scrubber{
         display: none;
+    }
+
+    &__duration{
+        color: white;
+        font-size: 10px;
+        display: none;
+
+        @include tablet{
+            display: initial;
+        }
     }
 
     &__fullnVol{

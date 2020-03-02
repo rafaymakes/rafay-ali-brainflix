@@ -20,6 +20,7 @@ const Video = (props) => {
                         <div className='video__scrubberbox'>
                             <div className='video__scrubberline'></div>
                             <img className='video__scrubber' src={scrubber}></img>
+                            <p className='video__duration'>0:00/0:42</p>
                         </div>
                         <div className='video__fullnVol'>
                             <img className='video__fullscreen' src={fullscreen}></img>
