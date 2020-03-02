@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Uploader.scss';
 import uploadpreview from './../../../Assets/Images/Upload-video-preview.jpg';
 
@@ -11,7 +11,7 @@ class Uploader extends React.Component {
                     <div className='upload__nobuttons'>
                         <div className='upload__thumbnail'>
                             <label className='upload__thumblabel' for='preview'>VIDEO THUMBNAIL</label>
-                            <img className='upload__preview ' id='preview' src={uploadpreview} />
+                            <img className='upload__preview ' alt='preview' id='preview' src={uploadpreview} />
                         </div>
                         <div className='upload__nopreview'>
                             <label className='upload__label upload__titlelabel' for="titleinp">TITLE YOUR VIDEO</label>

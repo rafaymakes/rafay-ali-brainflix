@@ -2,7 +2,6 @@ import React from 'react';
 import '../Comments/comments';
 
 const CommentCard = (props) => {
-
     return (
         <>
             {props.commentsDataProp.commentsProp.map(item => (

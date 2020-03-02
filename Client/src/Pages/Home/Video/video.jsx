@@ -15,16 +15,16 @@ const Video = (props) => {
                 <div className='video__controls'>
                     <div className='video__controlsflex'>
                         <div className='video__playbox'>
-                            <img className='video__play' src={play}></img>
+                            <img className='video__play' alt="play button" src={play}></img>
                         </div>
                         <div className='video__scrubberbox'>
                             <div className='video__scrubberline'></div>
-                            <img className='video__scrubber' src={scrubber}></img>
+                            <img className='video__scrubber' alt="scrubber" src={scrubber}></img>
                             <p className='video__duration'>0:00/0:42</p>
                         </div>
                         <div className='video__fullnVol'>
-                            <img className='video__fullscreen' src={fullscreen}></img>
-                            <img className='video__volume' src={volume}></img>
+                            <img className='video__fullscreen' alt="fullscreen button" src={fullscreen}></img>
+                            <img className='video__volume' alt="volume button" src={volume}></img>
                         </div>
                     </div>
                     <video className='video__videocontent' poster={props.mainVideoProp.image} >

@@ -3,8 +3,6 @@ import '../Suggestions/suggestions.scss';
 import Axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const keyAffix = '?api_key=94f19a78-ed3b-4723-9773-164ca4dffeee';
-
 class SuggestionCard extends React.Component {
 
     state = {
@@ -18,7 +16,6 @@ class SuggestionCard extends React.Component {
         )
 
             .then((res) => {
-                console.log(res)
                 this.setState({
                     sidevideos: res.data
                 })

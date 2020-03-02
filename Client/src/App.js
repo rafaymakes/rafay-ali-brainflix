@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './index.css';
 import Home from './Pages/Home/Home.js';
 import Upload from './Pages/Upload/Upload.jsx';

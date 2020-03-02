@@ -80,7 +80,7 @@
 
     &__search{
         height: 50px;
-        width: 100%;
+        width: 80%;
         background-color: $brainflixblue;
         font-family: 'Avenir-Demi';
         font-size: 15px;
@@ -93,6 +93,7 @@
         @include tablet{
             width: 100px;
             padding-left: 20px;
+            margin-right: 24px;
         }
     }
 

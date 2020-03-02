@@ -12,7 +12,7 @@ const Comments = (props) => {
                     <label className='comments__entrylabel' for='comment'>JOIN THE CONVERSATION</label>
                     <input className='comments__entry' name='comment' type='text'></input>
                     <input className='comments__button' type='submit' value='COMMENT' />
-                    <img className='comments__usericon' alt='your profile picture' src={UserIcon} />
+                    <img className='comments__usericon' alt='your profile' src={UserIcon} />
                 </form>
             </div>
             <div className='comments__outputs'>
